@@ -19,9 +19,9 @@ point, he has two files under source control
      
 3. He also keeps the tracking copies on remote Git Hub repository
 DevOps using Git commands
-- Ans. 
-      1. git remote add origin https://<username>:<githubtoken>@github.com/<username>/<repositoryname>.git
-      2. git push origin main
+   - Ans. 
+       1. git remote add origin https://username:githubtoken@github.com/username/repositoryname.git
+       2. git push origin main
 4. <Takes the snapshot of the Screen- SCREEN SHOT 1 >
   ![s_1](https://github.com/pskarthick15/Devops-1/blob/main/Screenshot%20from%202021-08-26%2016-41-25.png)
   
@@ -53,9 +53,9 @@ git separately
 Programmer A and Programmer B merges their files and pushes
 local main repository to remote git hub repository DevOps
   - Ans.
-    1. git checkout main
-    2. git merge Branch1 Branch2
-    3. git push origin main
+      1. git checkout main
+      2. git merge Branch1 Branch2
+      3. git push origin main
 4. They delete both Branch1 and Branch2
   - Ans.
     1. git branch -d Branch1
@@ -70,7 +70,7 @@ SCREEN SHOT -2>
   ![s_2.1](https://github.com/pskarthick15/Devops-1/blob/main/Screenshot%20from%202021-08-26%2017-02-27.png)
   ![s_2.2](https://github.com/pskarthick15/Devops-1/blob/main/Screenshot%20from%202021-08-26%2017-02-34.png?raw=true)
   
-##Instructions - 3:
+## Instructions - 3:
   - Identify merge conflict and solve
 1. Next day, Programmer A clones the latest DevOps directory
 from the Git Hub DevOps and starts working on it.
@@ -110,7 +110,7 @@ solving the Merge Conflict>
       ![s_3.4](https://github.com/pskarthick15/Devops-1/blob/main/Screenshot%20from%202021-08-26%2018-24-14.png?raw=true)
       ![s_3.5](https://github.com/pskarthick15/Devops-1/blob/main/Screenshot%20from%202021-08-26%2018-27-11.png?raw=true)
 7. Where is the HEAD Pointer now?  
-  Ans. 
+  - Ans. 
       1. // refer the above screenshots
 ## Instructions - 4: 
   ## - Work on Bug Fix on high priority on a Separate branch1.
@@ -119,7 +119,7 @@ Programmer B who comes in second shift. As he is still working
 on the file PRG2 he does not want to commit the changes done
 in this file . However, he is asked to complete the BUG Fix job
 ASAP.
-  -Ans. 
+  - Ans. 
       1. git checkout Branch2
       2. git stash // for the file that he is editing
 2. He uses the Git commands and saves existing work and takes
@@ -132,7 +132,7 @@ up new BUG FIX job in PRG3 file in Branch3
 3. After he commits the bugfix file, he gets back to his previous
 work in <Branch2> file PRG2 and completes the work by adding
 a few lines to PRG2
-  -Ans. 
+  - Ans. 
       1. git checkout Branch2
       2. git stash pop
       3. git add PRG2.txt
@@ -175,7 +175,7 @@ the date of the last commit before submitting the final local
 copy of main branch to Git hub repository. He does the date
 changes in the files.
   - Ans.
-        1. git filter-branch --env-filter \
+      1. git filter-branch --env-filter \
     'if [ $GIT_COMMIT = <Commit_id for which timestamp is to be changed> ]
      then
          export GIT_AUTHOR_DATE="Fri Jan 2 21:38:53 2009 -0800"
@@ -183,21 +183,21 @@ changes in the files.
      fi'
 2. While he was working on the date changes, his manager
 notices a typographic error in prg2.
-        - Ans. 
-            1. // Manually change the typographic error.
+   - Ans. 
+       1. // Manually change the typographic error.
 3. Manager instructs him to revert back to the first version of the
 commit he has just amended on prg2 .
-        - Ans. 
-            1. git revert <reqired commit_id from which we want to revert to>
+   - Ans. 
+       1. git revert <reqired commit_id from which we want to revert to>
 4. Programmer A performs the undoing of the commit and
 retrieves the first version of prg2, modifies and commits the file
 in local branch.
-        - Ans. 
-            1. git reset --soft HEAD~1
-            2. // modify the file in the branch and perform commit
+   - Ans. 
+       1. git reset --soft HEAD~1
+       2. // modify the file in the branch and perform commit
 5. He checks the history by using some Git commands .
-        Ans. 
-            1. git log
+   - Ans. 
+       1. git log
 6. <Take the snapshot of the screen (SCREEN SHOT 6) with the
 Git commands executed for the above steps>## 
       ![s_6.1](https://github.com/pskarthick15/Devops-1/blob/main/Screenshot%20from%202021-08-26%2018-14-55.png?raw=true)
