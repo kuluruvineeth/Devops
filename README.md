@@ -75,7 +75,7 @@ SCREEN SHOT -2>
 1. Next day, Programmer A clones the latest DevOps directory
 from the Git Hub DevOps and starts working on it.
   - Ans. 
-      1. git clone https://<username>:<githubtoken>@github.com/<username>/<repositoryname>.git
+      1. git clone https://username:githubtoken@github.com/username/repositoryname.git
 2. Programmer A creates Branch3 makes some changes on PRG1.
 He does not want to put under tracking until the modification
 is complete on the file.
