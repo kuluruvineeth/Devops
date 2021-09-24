@@ -82,8 +82,9 @@
            timeout: 30
            state: started
            msg: "NodeJS server is not running"
-<img src="https://github.com/kuluruvineeth/Devops/blob/main/ansiblePlaybookExercise/screenshots/3.png">
 ```
+<img src="https://github.com/kuluruvineeth/Devops/blob/main/ansiblePlaybookExercise/screenshots/3.png">
+
 
 ## Step4:  Launch the Playbook with Ansible Git
 ```
