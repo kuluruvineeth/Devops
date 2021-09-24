@@ -45,6 +45,7 @@ docker tag node-server <username>/nodejs-starter
 docker push <username>/nodejs-starter:1.1
 ```
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/kubernetesDockerExercise/screenshots/8.png">
+
 ## Step 7:
 -We have used the Kataconda environment for the simulation of kubernetes clusters https://www.katacoda.com/courses/kubernetes/creating-kubernetes-yaml-definitions
 
