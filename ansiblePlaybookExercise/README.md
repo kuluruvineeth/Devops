@@ -5,3 +5,8 @@
   - https://user:token@github.com/path
 
 ## Step2:  Creating Ansible vault to Store the Git username and token
+<img src="https://github.com/kuluruvineeth/Devops/blob/main/ansiblePlaybookExercise/screenshots/Screenshot%20from%202021-09-22%2019-14-42.png">
+<img src="https://github.com/kuluruvineeth/Devops/blob/main/ansiblePlaybookExercise/screenshots/Screenshot%20from%202021-09-22%2019-14-42.png">
+
+## Step3:  The Ansible Git Example Playbook
+<img src="">
