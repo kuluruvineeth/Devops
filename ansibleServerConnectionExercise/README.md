@@ -35,8 +35,7 @@ ll
    ```
    [webservers]
    <Public_IP_Address_of_webserver_node>
-   [dbservers]
-   <Public_IP_Address_of_dbserver_node>
+   ```
 
 ## Step-8: Connect to the webserver node from aws console
 - Go to the superuser
@@ -95,4 +94,21 @@ cat remote-web.key
 ``` 
 chmod 600 rempote-web.key
 ```
-- Go to the webserver. 
+- Go to the ansible-host and execute the folowing
+```
+ssh -p22 -i remote-web.key ansibleweb@<Public_IP_adress_of_webserver>
+```
+- **Hurray!** we have connected from our ansible-host instance to the webserver instance using ssh.
+- Now exit from the webserver
+```
+exit
+```
+-Now try connecting to the webserver using Ansible. Remember here webservers is the group that was created in the ansible hosts file.
+```
+ansible webservers -m ping
+```
+
+## Step-10: Now repeat the steps from step-7 to step 9 
+- But now the username would be dbserver and the groupname to be given in the host would be dbservers.
+
+**Kudos!! we have established our first ansible architecture successfully by connecting remote hosts to our ansible management control node**
