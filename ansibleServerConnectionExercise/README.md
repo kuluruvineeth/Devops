@@ -17,16 +17,15 @@ sudo yum install ansible
 ```
 ansible --version
 ```
-## Step-5: Check the present working directory and move back to the root location
 
-## Step-6: Confirm the ansible installation
+## Step-5: Check the present working directory and move back to the root location
 ```
 pwd
 cd ..
 cd ..
 ll
 ```
-## Step-7: Go to the etc/ansible folder
+## Step-6: Go to the etc/ansible folder
 - Now go to the hosts file
   ```
   vi hosts
@@ -37,7 +36,7 @@ ll
    <Public_IP_Address_of_webserver_node>
    ```
 
-## Step-8: Connect to the webserver node from aws console
+## Step-7: Connect to the webserver node from aws console
 - Go to the superuser
 ```
 sudo su
@@ -65,7 +64,7 @@ ll
 cat id_rsa.pub
 vi authorized_keys
 ```
-## Step-9: Now switch back to ansible-host instance. Then do
+## Step-8: Now switch back to ansible-host instance. Then do
 - Go to the superuser
 ```
 sudo su
@@ -108,7 +107,7 @@ exit
 ansible webservers -m ping
 ```
 
-## Step-10: Now repeat the steps from step-7 to step 9 
+## Step-9: Now repeat the steps from step-7 to step 9 
 - But now the username would be dbserver and the groupname to be given in the host would be dbservers.
 
 **Kudos!! we have established our first ansible architecture successfully by connecting remote hosts to our ansible management control node**
