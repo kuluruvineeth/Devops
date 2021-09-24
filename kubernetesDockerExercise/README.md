@@ -1,6 +1,4 @@
 # Kubernetes and Docker exercise
 
-<details>
-  <summary>Kubernetes and Docker demonstration using a basic nodejs server deployment</summary><details>
-  <img src="https://github.com/kuluruvineeth/Devops/blob/main/Kubernetes_Docker/screenshots/Screenshot%20from%202021-09-20%2019-02-10.png" name="Screenshot%20from%202021-09-20%2019-02-10.png">
-</details>
+## Step 1: Make A Separate Directory And Initialize The Node Application
+
