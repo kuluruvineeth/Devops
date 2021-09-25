@@ -59,6 +59,7 @@ useradd -d /home/ansibleweb -m ansibleweb
 passwd ansibleweb
 ```
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/ansibleServerConnectionExercise/screenshots/14.png">
+
 - Next, change the user to ansible web. Then go to the ansibleweb folder and create a .ssh file, change its user access and generate the rsa private and public keys
 ```
 su - ansibleweb
@@ -93,6 +94,7 @@ useradd -d /home/ansiblehost -m ansiblehost
 passwd ansiblehost
 ```
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/ansibleServerConnectionExercise/screenshots/19.png">
+
 - Go to the root location and chnage the owner of ansible folder
 ```
 cd ..
@@ -124,7 +126,7 @@ ssh -p22 -i remote-web.key ansibleweb@<Public_IP_adress_of_webserver>
 ```
 exit
 ```
--Now try connecting to the webserver using Ansible. Remember here webservers is the group that was created in the ansible hosts file.
+- Now try connecting to the webserver using Ansible. Remember here webservers is the group that was created in the ansible hosts file.
 ```
 ansible webservers -m ping
 ```
