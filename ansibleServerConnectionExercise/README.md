@@ -126,6 +126,7 @@ ssh -p22 -i remote-web.key ansibleweb@<Public_IP_adress_of_webserver>
 ```
 exit
 ```
+- **Note:** The screenshots in violet background indicate that user **ansiblehost:awspsk** , **ansibleweb:awstgrewebserver** , **ansibledb:awstgredbserver**
 - Now try connecting to the webserver using Ansible. Remember here webservers is the group that was created in the ansible hosts file.
 ```
 ansible webservers -m ping
