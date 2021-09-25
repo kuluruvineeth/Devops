@@ -75,7 +75,7 @@ cd .ssh
 ll
 cat id_rsa.pub
 vi authorized_keys
-
+```
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/ansibleServerConnectionExercise/screenshots/16.png">
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/ansibleServerConnectionExercise/screenshots/17.png">
 
@@ -130,9 +130,9 @@ ansible webservers -m ping
 ```
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/ansibleServerConnectionExercise/screenshots/24.png">
 
-## Step-9: Now repeat the steps from step-7 to step 9 
-- But now the username would be dbserver and the groupname to be given in the host would be dbservers.
+## Step-9: Now repeat the steps from step-7 to step 9:
 
+- But now the username would be dbserver and the groupname to be given in the host would be dbservers.
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/ansibleServerConnectionExercise/screenshots/25.png">
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/ansibleServerConnectionExercise/screenshots/26.png">
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/ansibleServerConnectionExercise/screenshots/27.png">
