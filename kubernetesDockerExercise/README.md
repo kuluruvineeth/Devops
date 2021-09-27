@@ -76,7 +76,7 @@ spec: #5
     spec: #12
       containers: #13
       - name: nodongo #14
-        image: lightninglife/nodejs-starter:1.1 #15
+        image: <username>/nodejs-starter:1.1 #15
         ports: #16
         - containerPort: 3000 #17
 ```
