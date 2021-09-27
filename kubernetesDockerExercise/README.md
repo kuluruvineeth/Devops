@@ -57,7 +57,7 @@ docker push <username>/nodejs-starter:1.1
 
 ## Step 9: Create Deployment In Kubernetes Cluster
 ```
-kubectl create -f deploy.yaml
+kubectl create -f deployment.yaml
 ```
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/kubernetesDockerExercise/screenshots/9.png">
 
