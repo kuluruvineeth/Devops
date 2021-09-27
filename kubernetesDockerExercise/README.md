@@ -50,10 +50,10 @@ docker push <username>/nodejs-starter:1.1
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/kubernetesDockerExercise/screenshots/8.png">
 
 ## Step 7:
--We have used the Kataconda environment for the simulation of kubernetes clusters https://www.katacoda.com/courses/kubernetes/creating-kubernetes-yaml-definitions
+- We have used the Kataconda environment for the simulation of kubernetes clusters https://www.katacoda.com/courses/kubernetes/creating-kubernetes-yaml-definitions
 
 ## Step 8: Define YAML File To Create A Deployment In Kubernetes Cluster
--The deployment.yaml file is the one that we have used to specify the various parameters of our cluster like the number of pods, container features,etc.
+- The deployment.yaml file is the one that we have used to specify the various parameters of our cluster like the number of pods, container features,etc.
 
 ## Step 9: Create Deployment In Kubernetes Cluster
 ```
