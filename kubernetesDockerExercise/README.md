@@ -24,6 +24,7 @@ npm install express --save
 ```
 gedit Dockerfile
 ```
+<img src="https://github.com/kuluruvineeth/Devops/blob/main/kubernetesDockerExercise/screenshots/14.png">
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/kubernetesDockerExercise/screenshots/3.png">
 
 ```
