@@ -59,6 +59,27 @@ docker push <username>/nodejs-starter:1.1
 ```
 kubectl create -f deployment.yaml
 ```
+```
+apiVersion: apps/v1 #1
+kind: Deployment #2
+metadata: #3
+  name: nodejs-deployment #4
+spec: #5
+  replicas: 2 #6
+  selector: #7
+    matchLabels: #7
+      app: nodejs #7
+  template: #8
+    metadata: #9
+      labels: #10
+        app: nodejs #11
+    spec: #12
+      containers: #13
+      - name: nodongo #14
+        image: lightninglife/nodejs-starter:1.1 #15
+        ports: #16
+        - containerPort: 3000 #17
+```
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/kubernetesDockerExercise/screenshots/9.png">
 
 ## Step 10: Expose The Deployment To The Internet
