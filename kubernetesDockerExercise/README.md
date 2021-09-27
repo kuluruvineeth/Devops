@@ -41,6 +41,7 @@ docker run -d --name nodongo -p 3000:3000 node-server
 
 ## Step 6: Upload The Image To Docker Registry Docker Hub
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/kubernetesDockerExercise/screenshots/7.png">
+
 ```
 docker tag node-server <username>/nodejs-starter
 docker push <username>/nodejs-starter:1.1
