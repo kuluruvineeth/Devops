@@ -12,19 +12,18 @@
 ```
 ---
   - name: Install and Launch the Simple NodeJS Application
-    hosts: nodeserver
+    hosts: localhost
     vars_files:
        - secrets.yml
     vars:
-       - destdir: /apps/SampleNodeApp
+       - destdir: Apps/samplenodeapp
     tasks:
 
        - name : install Node and NPM
+         shell:
+            "apt install nodejs"
          become: yes
          register: ymrepo
-         yum:
-           name: nodejs
-           state: latest
 
        - name : validate the nodejs installation
          debug: msg="Installation of node is Successfull"
@@ -43,14 +42,15 @@
        - name: Download the NodeJS code from the GitRepo
          become: yes
          git:
-            repo: 'https://{{gituser}}:{{gitpass}}@github.com/AKSarav/SampleNodeApp.git'
+            repo: 'https://{{gituser}}:{{gitpass}}@github.com/pskarthick15/simple-reactjs-app-master'
             dest: "{{ destdir }}"
+            force: yes
 
        - name: Change the ownership of the directory
          become: yes
          file:
            path: "{{destdir}}"
-           owner: "vagrant"
+           owner: "karthick"
          register: chgrpout
 
        - name: Install Dependencies with NPM install command
@@ -65,10 +65,10 @@
 
 
        - name: Start the App
-         async: 10
+         async: 60
          poll: 0
          shell:
-            "(node index.js > nodesrv.log 2>&1 &)"
+            "npm start"
          args:
            chdir: "{{ destdir }}"
          register: appstart
@@ -77,9 +77,9 @@
          tags: nodevalidate
          wait_for:
            host: "localhost"
-           port: 5000
-           delay: 10
-           timeout: 30
+           port: 3000
+           delay: 60
+           timeout: 500
            state: started
            msg: "NodeJS server is not running"
 ```
