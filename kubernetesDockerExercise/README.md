@@ -12,6 +12,7 @@ cd nodejs/
 npm init
 ```
 <img src="https://github.com/kuluruvineeth/Devops/blob/main/kubernetesDockerExercise/screenshots/1.png">
+
 ## Step 2: Installing Express
 
 ```
