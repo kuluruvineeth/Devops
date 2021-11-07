@@ -90,7 +90,7 @@ sudo usermod -aG docker jenkins
 ```
 ![ec-2](https://github.com/kuluruvineeth/Devops/blob/main/jenkins-cicd/screenshots/1.12.png)
 
-## Step-6: Install and Setup AWS CLI
+# Install and Setup AWS CLI
 - now we have our EC2 machine and Jenkins installed. Now we need to set up the AWS CLI on the EC2 machine so that we can use eksctl in the later stages. Let us get the installation done for AWS CLI
 ```
 sudo apt install awscli 
