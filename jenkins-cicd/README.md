@@ -1,4 +1,4 @@
-# Setup an AWS EC2 Instance
+# Setting up ci/cd pipeline using jenkins to deploy on kubernetes
 
 - The first step would be for us to set up an EC2 instance and on this instance, we will be installing -
 
